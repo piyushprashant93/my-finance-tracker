@@ -1,3 +1,7 @@
+/*
+ *   Copyright (c) 2023 
+ *   All rights reserved.
+ */
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
@@ -13,10 +17,11 @@ export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
-}) {
+  }) {
+  
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en"  >
+      <body  className='bg-white dark:bg-background-dark'>{children}</body>
     </html>
   )
 }
